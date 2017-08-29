@@ -7,6 +7,12 @@ from config import *
 import os
 from hashlib import md5
 
+MONGO_URL='localhost'
+MONGO_DB='toutiao'
+MONGO_TABLE='toutiao'
+
+GROUP_START=1
+GROUP_END=20
 client=pymongo.MongoClient(MONGO_URL)
 db=client[MONGO_DB]
 
