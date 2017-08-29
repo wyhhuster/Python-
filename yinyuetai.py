@@ -5,6 +5,9 @@ from config1 import *
 
 reload(sys)
 sys.setdefaultencoding('utf8')
+MONGO_URL='localhost'
+MONGO_DB='yinyuetai'
+MONGO_TABLE='yinyuetai'
 client=pymongo.MongoClient(MONGO_URL)
 db=client[MONGO_DB]
 
